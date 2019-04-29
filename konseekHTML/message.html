@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Message</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="js/datepicker/jquery-ui.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/mcs.reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="js/bxslider/jquery.bxslider.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="js/scrollbar/jquery.scrollbar.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="js/rating/rating.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+</head>
+<body>
+	<div class="the-header">
+		<header id="header">
+			<div class="container">
+				<div class="header-top">
+					<a href="customer.html" class="logo"><img src="images/logo.png" alt="Konseek" /></a>
+					<form action="" id="searchForm">
+						<input type="text" name="tu_khoa" id="searchKey" placeholder="Nhập từ khóa tìm kiếm ..." autocomplete="off" />
+					</form>
+					<div class="header-right">
+						<div class="list-inline">
+							<div class="item-inline top-user">
+								<a href="#loginTab" data-toggle="modal" data-target="#signupModal">Đăng nhập</a>
+								<a href="#registerTab" data-toggle="modal" data-target="#signupModal">Đăng ký</a>
+							</div>
+							<div class="item-inline top-message">
+								<a href=""><img src="images/icon/icon-message.png" alt="" /></a>
+							</div>
+							<div class="item-inline top-notify">
+								<a href=""><img src="images/icon/icon-alert.png" alt="" /><span class="number">3</span></a>
+							</div>
+							<div class="item-inline top-settings">
+								<a href="" class="action"><i class="fa fa-caret-down"></i></a>
+								<ul class="text-right">
+									<li><a href="">Cài đặt tài khoản</a></li>
+									<li><a href="">Đăng xuất</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav id="menu-top" class="text-center">
+					<ul>
+						<li class="menu-item-design"><a href=""><img src="images/icon/icon-design.png" alt="" /> Tìm nhà thiết kế</a>
+							<div class="submenu text-left">
+								<ul>
+									<li>
+										<h2 class="text-uppercase">Thiết kế nhà</h2>
+										<ul>
+											<li><a href="">Thiết kế kiến trúc</a></li>
+											<li><a href="">Thiết kế và thi công trọn gói</a></li>
+											<li><a href="">Thiết kế cảnh quan</a></li>
+										</ul>
+									</li>
+									<li>
+										<h2 class="text-uppercase">Thiết Kế Nội Thất</h2>
+										<ul>
+											<li><a href="">Thiết kế và thi công nội thất nhà ở</a></li>
+											<li><a href="">Thiết kế và thi công nội thất shop, café, văn phòng</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-item-contractors"><a href=""><img src="images/icon/icon-contractors.png" alt="" /> Tìm nhà thầu</a>
+							<div class="submenu text-left">
+								<ul>
+									<li>
+										<h2 class="text-uppercase">Thi Công</h2>
+										<ul>
+											<li><a href="">Thi công nhà trọn gói</a></li>
+											<li><a href="">Tổng thầu xây dựng</a></li>
+											<li><a href="">Thi công lắp đặt hoàn thiện</a></li>
+											<li><a href="">Thi công nội thất</a></li>
+											<li><a href="">Thi công mái, các hạng mục sắt</a></li>
+											<li><a href="">Thi công cảnh quan</a></li>
+											<li><a href="">Thi công bể bơi</a></li>
+										</ul>
+									</li>
+									<li>
+										<h2 class="text-uppercase">Sửa Chữa</h2>
+										<ul>
+											<li><a href="">Sửa chữa chung Nhà ở, Văn Phòng, Shop</a></li>
+											<li><a href="">Sửa chữa điều hòa, điện dân dụng</a></li>
+											<li><a href="">Sửa chữa thiết bị vệ sinh, hệ thống nước</a></li>
+											<li><a href="">Sửa chữa đồ nội thất</a></li>
+											<li><a href="">Sửa chữa hệ thống cửa</a></li>
+											<li><a href="">Bảo dưỡng bể bơi – spa, sân vườn</a></li>
+										</ul>
+									</li>
+									<li>
+										<h2 class="text-uppercase">Dịch vụ</h2>
+										<ul>
+											<li><a href="">Dịch vụ chuyển nhà</a></li>
+											<li><a href="">Diệt côn trùng trong nhà</a></li>
+											<li><a href="">Dịch vụ dọn dẹp nhà cửa</a></li>
+											<li><a href="">Dịch vụ tư vấn phong thủy – tâm linh</a></li>
+											<li><a href="">Dịch vụ hút bể phốt</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-item-supplier"><a href=""><img src="images/icon/icon-supplier.png" alt="" /> Tìm nhà cung cấp</a>
+							<div class="submenu text-left">
+								<ul>
+									<li>
+										<h2 class="text-uppercase">Hoàn Thiện – Nội Thất</h2>
+										<ul>
+											<li><a href="">Vật tư hoàn thiện, trang trí tổng hợp</a></li>
+											<li><a href="">Nội thất phòng khách, phòng đọc</a></li>
+											<li><a href="">Nội thất phòng ngủ</a></li>
+											<li><a href="">Nội thất phòng bếp</a></li>
+											<li><a href="">Nội thất phòng ngủ</a></li>
+											<li><a href="">Nội thất phòng thờ</a></li>
+											<li><a href="">Thiết bị, nội thất phòng tắm, nhà vệ sinh</a></li>
+										</ul>
+									</li>
+									<li>
+										<h2 class="text-uppercase">Vật Liệu – Vật Tư</h2>
+										<ul>
+											<li><a href="">Vật liệu, vật tư thô</a></li>
+											<li><a href="">Vật liệu, vật tư thiết bị điện</a></li>
+											<li><a href="">Vật liệu, vật tư hệ thống nước</a></li>
+											<li><a href="">Vật liệu, vật tư sửa chữa nhà</a></li>
+											<li><a href="">Khác</a></li>
+										</ul>
+									</li>
+									<li>
+										<h2 class="text-uppercase">Thiết bị - Máy Móc</h2>
+										<ul>
+											<li><a href="">Thiết bị điện</a></li>
+											<li><a href="">Thiết bị cho hệ thống nước</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	</div>
+	<main id="content" class="message-content">
+		<div class="container">
+			<div class="message-main list-inline">
+				<div class="sidebar-message item-inline">
+					<h3>Tin nhắn</h3>
+					<form action="" id="msearchChat">
+						<div class="top-chat search-user">
+							<input type="text" name="tu_khoa_chat" id="searchkeyChat" placeholder="Tìm kiếm ..." autocomplete="off" />
+						</div>
+						<div class="list-chatting scrollbar-inner">
+							<ul>
+								<li>
+									<a href="#chatUser1">
+										<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+										<div class="des-message">
+											<h4>Custormer Name 1</h4>
+											<p class="no-read">It is long established fact ...</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#chatUser2" class="current">
+										<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+										<div class="des-message">
+											<h4>Custormer Name 2</h4>
+											<p>Lorem Ipsum is simply dummy ...</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#chatUser3">
+										<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+										<div class="des-message">
+											<h4>Custormer Name 3</h4>
+											<p>It is long established fact ...</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+										<div class="des-message">
+											<h4>Custormer Name 4</h4>
+											<p>It is long established fact ...</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+										<div class="des-message">
+											<h4>Custormer Name 5</h4>
+											<p>It is long established fact ...</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+										<div class="des-message">
+											<h4>Custormer Name 6</h4>
+											<p>It is long established fact ...</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+										<div class="des-message">
+											<h4>Custormer Name 7</h4>
+											<p>It is long established fact ...</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+										<div class="des-message">
+											<h4>Custormer Name 8</h4>
+											<p>It is long established fact ...</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+										<div class="des-message">
+											<h4>Custormer Name 9</h4>
+											<p>It is long established fact ...</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+										<div class="des-message">
+											<h4>Custormer Name 10</h4>
+											<p>It is long established fact ...</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+				<div class="message-center item-inline">
+					<div class="chat-box-item tab-pane-page" id="chatUser1">
+						<div class="box-header text-center">
+							<h4>Customer Name 1</h4>
+							<p>Hoạt động 1 ngày trước</p>
+						</div>
+						<form action="">
+							<div class="box-include">
+								<div class="box-content scrollbar-inner">
+									<div class="chat-item chat-item-left text-left">
+										<div class="avatar" style="background-image: url(images/avatar-default.png);"></div>
+										<div class="inner-chat">
+											<span>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+										</div>
+										<p class="timer text-center"> T6 16:22</p>
+									</div>
+									<div class="chat-item chat-item-right text-right">
+										<div class="inner-chat">
+											<div class="line-text">
+												<span title="8 tháng 10 22:22">Lorem Ipsum is simply... </span>
+											</div>
+										</div>
+										<p class="timer"><i class="fa fa-check"></i> Đã xem lúc 22:22</p>
+									</div>
+								</div>
+								<div class="box-action">
+									<input type="text" class="form-control" placeholder="Nhập tin nhắn ..." autocomplete="off">
+									<input type="submit" class="send-message" value="Gửi">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="chat-box-item tab-pane-page active" id="chatUser2">
+						<div class="box-header text-center">
+							<h4>Customer Name 2</h4>
+							<p>Hoạt động 1 ngày trước</p>
+						</div>
+						<form action="">
+							<div class="box-include">
+								<div class="box-content scrollbar-inner">
+									<div class="chat-item chat-item-left text-left">
+										<div class="avatar" style="background-image: url(images/avatar-default.png);"></div>
+										<div class="inner-chat">
+											<span>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+										</div>
+										<p class="timer text-center"> T6 16:22</p>
+									</div>
+									<div class="chat-item chat-item-right text-right">
+										<div class="inner-chat">
+											<div class="line-text" >
+												<span title="8 tháng 10 22:22">Lorem Ipsum is simply... </span>
+											</div>
+											<div class="line-text">
+												<span title="1 tháng 1 00:00">Lorem Ipsum is simply... </span>
+											</div>
+										</div>
+										<p class="timer"><i class="fa fa-check"></i> Đã xem lúc 22:22</p>
+									</div>
+								</div>
+								<div class="box-action">
+									<input type="text" class="form-control" placeholder="Nhập tin nhắn ..." autocomplete="off">
+									<input type="submit" class="send-message" value="Gửi">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="chat-box-item tab-pane-page" id="chatUser3">
+						<div class="box-header text-center">
+							<h4>Customer Name 3</h4>
+							<p>Hoạt động 2 ngày trước</p>
+						</div>
+						<form action="">
+							<div class="box-include">
+								<div class="box-content scrollbar-inner">
+									<div class="chat-item chat-item-left text-left">
+										<div class="avatar" style="background-image: url(images/avatar-default.png);"></div>
+										<div class="inner-chat">
+											<span>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+										</div>
+										<p class="timer text-center"> T6 16:22</p>
+									</div>
+									<div class="chat-item chat-item-right text-right">
+										<div class="inner-chat">
+											<div class="line-text">
+												<span title="8 tháng 10 22:22">Lorem Ipsum is simply... </span>
+											</div>
+										</div>
+										<p class="timer"><i class="fa fa-check"></i> Đã xem lúc 22:22</p>
+									</div>
+								</div>
+								<div class="box-action">
+									<input type="text" class="form-control" placeholder="Nhập tin nhắn ..." autocomplete="off">
+									<input type="submit" class="send-message" value="Gửi">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer id="footer" class="text-center">
+		<div class="container">
+			<div class="list-inline">
+				<nav class="item-inline menu-footer">
+					<ul>
+						<li><a href="">Về chúng tôi</a></li>
+						<li><a href="">Dịch vụ cung cấp</a></li>
+						<li><a href="">Chính sách & Điều khoản</a></li>
+						<li><a href="">Liên hệ</a></li>
+					</ul>
+				</nav>
+				<div class="item-inline social">| Kết nối <a href="" rel="nofollow" target="_blank"><img src="images/icon/icon-facebook.png" alt="" /> Fanpage Konseek</a></div>
+			</div>
+			<div class="copyright"><span>Copyright © 2018 Konseek</span> - Tìm để xây - Nền tảng kết nối toàn diện ngành xây dựng</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/datepicker/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/bxslider/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/scrollbar/jquery.scrollbar.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/rating/rating.js"></script>
+	<script type="text/javascript" src="js/mcs.custom.js"></script>
+	<script type="text/javascript">
+		var tooltips = $('.line-text span').tooltip({
+	    position: {
+	        my: "left top",
+	        at: "right+18 top",
+	        using: function(position, feedback) {
+	          $(this).css(position);
+	          $( "<div>")
+		            .addClass("arrow" )
+		            .addClass(feedback.vertical)
+		            .addClass(feedback.horizontal)
+		            .appendTo(this );
+	       	 	}
+      		}
+    	});
+	</script>
+</body>
+</html>

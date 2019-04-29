@@ -1,0 +1,957 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>6.ChuNha_TrangCaNhanChuyenGia_2+3</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="js/datetimepicker/jquery.datetimepicker.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="js/datepicker/jquery-ui.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/mcs.reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="js/bxslider/jquery.bxslider.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="js/scrollbar/jquery.scrollbar.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="js/rating/rating.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="js/select2/css/select2.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+</head>
+<body>
+	<div class="the-header">
+		<header id="header">
+			<div class="container">
+				<div class="header-top">
+					<a href="customer.html" class="logo"><img src="images/logo.png" alt="Konseek" /></a>
+					<form action="" id="searchForm">
+						<input type="text" name="tu_khoa" id="searchKey" placeholder="Nhập từ khóa tìm kiếm ..." autocomplete="off" />
+					</form>
+					<div class="header-right">
+						<div class="list-inline">
+							<div class="item-inline top-user">
+								<a href="#loginTab" data-toggle="modal" data-target="#signupModal">Đăng nhập</a>
+								<a href="#registerTab" data-toggle="modal" data-target="#signupModal">Đăng ký</a>
+							</div>
+							<div class="item-inline top-message">
+								<a href=""><img src="images/icon/icon-message.png" alt="" /></a>
+							</div>
+							<div class="item-inline top-notify">
+								<a href=""><img src="images/icon/icon-alert.png" alt="" /><span class="number">3</span></a>
+							</div>
+							<div class="item-inline top-settings">
+								<a href="" class="action"><i class="fa fa-caret-down"></i></a>
+								<ul class="text-right">
+									<li><a href="">Cài đặt tài khoản</a></li>
+									<li><a href="">Đăng xuất</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav id="menu-top" class="text-center">
+					<ul>
+						<li class="menu-item-design"><a href=""><img src="images/icon/icon-design.png" alt="" /> Tìm nhà thiết kế</a>
+							<div class="submenu text-left">
+								<ul>
+									<li>
+										<h2 class="text-uppercase">Thiết kế nhà</h2>
+										<ul>
+											<li><a href="">Thiết kế kiến trúc</a></li>
+											<li><a href="">Thiết kế và thi công trọn gói</a></li>
+											<li><a href="">Thiết kế cảnh quan</a></li>
+										</ul>
+									</li>
+									<li>
+										<h2 class="text-uppercase">Thiết Kế Nội Thất</h2>
+										<ul>
+											<li><a href="">Thiết kế và thi công nội thất nhà ở</a></li>
+											<li><a href="">Thiết kế và thi công nội thất shop, café, văn phòng</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-item-contractors"><a href=""><img src="images/icon/icon-contractors.png" alt="" /> Tìm nhà thầu</a>
+							<div class="submenu text-left">
+								<ul>
+									<li>
+										<h2 class="text-uppercase">Thi Công</h2>
+										<ul>
+											<li><a href="">Thi công nhà trọn gói</a></li>
+											<li><a href="">Tổng thầu xây dựng</a></li>
+											<li><a href="">Thi công lắp đặt hoàn thiện</a></li>
+											<li><a href="">Thi công nội thất</a></li>
+											<li><a href="">Thi công mái, các hạng mục sắt</a></li>
+											<li><a href="">Thi công cảnh quan</a></li>
+											<li><a href="">Thi công bể bơi</a></li>
+										</ul>
+									</li>
+									<li>
+										<h2 class="text-uppercase">Sửa Chữa</h2>
+										<ul>
+											<li><a href="">Sửa chữa chung Nhà ở, Văn Phòng, Shop</a></li>
+											<li><a href="">Sửa chữa điều hòa, điện dân dụng</a></li>
+											<li><a href="">Sửa chữa thiết bị vệ sinh, hệ thống nước</a></li>
+											<li><a href="">Sửa chữa đồ nội thất</a></li>
+											<li><a href="">Sửa chữa hệ thống cửa</a></li>
+											<li><a href="">Bảo dưỡng bể bơi – spa, sân vườn</a></li>
+										</ul>
+									</li>
+									<li>
+										<h2 class="text-uppercase">Dịch vụ</h2>
+										<ul>
+											<li><a href="">Dịch vụ chuyển nhà</a></li>
+											<li><a href="">Diệt côn trùng trong nhà</a></li>
+											<li><a href="">Dịch vụ dọn dẹp nhà cửa</a></li>
+											<li><a href="">Dịch vụ tư vấn phong thủy – tâm linh</a></li>
+											<li><a href="">Dịch vụ hút bể phốt</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-item-supplier"><a href=""><img src="images/icon/icon-supplier.png" alt="" /> Tìm nhà cung cấp</a>
+							<div class="submenu text-left">
+								<ul>
+									<li>
+										<h2 class="text-uppercase">Hoàn Thiện – Nội Thất</h2>
+										<ul>
+											<li><a href="">Vật tư hoàn thiện, trang trí tổng hợp</a></li>
+											<li><a href="">Nội thất phòng khách, phòng đọc</a></li>
+											<li><a href="">Nội thất phòng ngủ</a></li>
+											<li><a href="">Nội thất phòng bếp</a></li>
+											<li><a href="">Nội thất phòng ngủ</a></li>
+											<li><a href="">Nội thất phòng thờ</a></li>
+											<li><a href="">Thiết bị, nội thất phòng tắm, nhà vệ sinh</a></li>
+										</ul>
+									</li>
+									<li>
+										<h2 class="text-uppercase">Vật Liệu – Vật Tư</h2>
+										<ul>
+											<li><a href="">Vật liệu, vật tư thô</a></li>
+											<li><a href="">Vật liệu, vật tư thiết bị điện</a></li>
+											<li><a href="">Vật liệu, vật tư hệ thống nước</a></li>
+											<li><a href="">Vật liệu, vật tư sửa chữa nhà</a></li>
+											<li><a href="">Khác</a></li>
+										</ul>
+									</li>
+									<li>
+										<h2 class="text-uppercase">Thiết bị - Máy Móc</h2>
+										<ul>
+											<li><a href="">Thiết bị điện</a></li>
+											<li><a href="">Thiết bị cho hệ thống nước</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	</div>
+	<main class="project-content customer-content personal-content">
+		<div class="container">
+			<div class="banner-control">
+				<form action="">
+					<div class="personal-banner background-general" style="background-image:url('images/personal/cover-image.jpg')">
+						<!-- <a href="" class="links"></a> -->
+						<div class="avartar-banner">
+							<div class="thumbnail-avartar background-general" style="background-image:url('images/picture/avatar.png'">	
+								<a href="" class="links"></a>								
+								<div class="it-form">
+									<label for="camera1"><i class="fa fa-camera"></i></label>
+									<input type="file" class="it-camera" name="camera" id="camera1" />
+								</div>
+							</div>
+						</div>	
+						<div class="name-user">
+							<div class="it-form">
+								<label class="btn-general" for="camera2"><i class="fa fa-camera"></i>Thay đổi ảnh bìa</label>
+								<input type="file" class="it-camera" name="camera" id="camera2" />
+							</div>
+							<h1><a class="myname-user" href="">Công ty kiến trúc 1</a></h1>
+							<div class="rating-star">
+								<span class="pro-project">PRO</span>
+								<input type="hidden" class="rating" disabled="disabled" value="4" data-empty="fa fa-star fa-gray" data-filled="fa fa-star" data-fractions="2" /> <span>1 đánh giá | Đánh giá của tôi</span>
+							</div>
+						</div>
+						<div class="account-settings">				
+							<a class="btn-general" href=""><img src="images/icon/mess-small.png" alt="" />Nhắn tin</a>
+						</div>
+					</div>
+					<div class="nav-banner">
+						<ul>
+							<li><a href="">Giới thiệu</a></li>
+							<li><a href="">Dòng thời gian</a></li>
+							<li class="active"><a href="">Dự án - Sản phẩm</a></li>
+							<li><a href="">Bài viết yêu thích</a></li>
+							<li><a href="">Báo giá</a></li>
+							<li><a href="evaluate-page.html">Đánh giá</a></li>
+							<li><a href="action-page.html">Hoạt động</a></li>
+						</ul>
+					</div>
+				</form>
+			</div>
+			<div class="customer-project customer-main">
+				<div class="list-inline">
+					<div class="item-inline sidebar-left">
+						<div class="widget-project">
+							<h3><b>Dự án sản phẩm</b></h3>
+							<ul>
+								<li><a href="">Tất cả</a></li>
+								<li class="active"><a href="">Classical Addition</a></li>
+								<li><a href="">Stone Family Room Addition</a></li>
+								<li><a href="">Family Farmhouse</a></li>
+								<li><a href="">A Farm Complex</a></li>
+								<li><a href="">Berkshire Pool House</a></li>
+								<li><a href="">Bright Kitchen</a></li>
+								<li><a href="">Low Ceiling Kitchen</a></li>
+								<li><a href="">Greek Revival Pool House</a></li>
+								<li><a href="">Guest House Garage</a></li>
+								<li><a href="">Stream Side Home</a></li>
+								<li><a href="">Country Home</a></li>
+								<li><a href="">Artist Home</a></li>
+								<li><a href="">Micro-Winery/Guest House</a></li>
+								<li><a href="">Connecticut Home</a></li>
+								<li><a href="">Berkshire Retreat</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item-inline main-content-project main-content">
+						<div class="term-detail-project">
+							<div class="head-project">
+								<h3 class="text-uppercase">Classical Addition</h3>
+								<p class="name">Thiết kế nhà</p>
+								<p class="address">86-88, Hàm Nghi, Phường Bến Nghé, Quận 1- HCM</p>
+							</div>
+							<div class="information-project">
+								<h4>Phong cách Châu Âu | Diện tích: 70 - 150m2 | Ngân sách: 100 triệu - 150 triệu  </h4>
+								<p>Our clients wanted to respect the architecture of their original home while taking on a major renovation and addition.
+								The additions we designed are Greek revival, which is a vernacular style of the region and was consistent with the age of the original home. Triple hung windows bring wonderful amounts of light into the living room, while the open plan of the kitchen helps the renovated home flow well. In the end, this old farmhouse feels as though it was finished in the nineteenth century.</p>
+								<p>Project Year: 2017</p>
+								<p>Project Cost: $1,500,001 - $2,000,000</p>
+								<p>Country: United States</p>
+								<p>Zip Code: 12545</p>
+							</div>
+							<div class="phightlight-action">
+								<a href="" class="like">2212</a>
+								<a href="" class="view">2212</a>
+								<a href="" class="date">2 days ago</a>
+							</div>
+							<div class="view-list-project">
+								<div class="list-sort text-right">
+									<ul class="nav nav-tabs" role="tablist">
+										<li class="nav-item"><a class="nav-link show active" data-toggle="tab" role="tab" href="#displayProject1">
+											<img class="active" src="images/icon/icon-display1.png" alt="">
+											<img class="current" src="images/icon/icon-display1-active.png" alt=""></a>
+										</li>
+										<li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="#displayProject2">
+											<img class="active" src="images/icon/icon-display2.png" alt="">
+											<img class="current" src="images/icon/icon-display2-active.png" alt=""></a>
+										</li>
+										<li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="#">
+											<img class="active" src="images/icon/icon-display3.png" alt="">
+											<img class="current" src="images/icon/icon-display3-active.png" alt=""></a>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="displayProject1" role="tabpanel">
+										<div class="hlist-project">
+											<ul class="list-inline">
+												<li class="item-inline">
+													<div class="project-pitem">
+														<div class="img-project">
+															<img src="images/picture/small-project.png" alt="">
+															<a href=""></a>
+														</div>
+														<div class="infor-project">
+															<h4><a href="">Tiêu đề</a></h4>
+															<div class="des-project">
+																Lorem Ipsum has been the industry's standard ...
+															</div>
+														</div>
+													</div>
+												</li>
+												<li class="item-inline">
+													<div class="project-pitem">
+														<div class="img-project">
+															<img src="images/picture/small-project.png" alt="">
+															<a href=""></a>
+														</div>
+														<div class="infor-project">
+															<h4><a href="">Tiêu đề</a></h4>
+															<div class="des-project">
+																Lorem Ipsum has been the industry's standard ...
+															</div>
+														</div>
+													</div>
+												</li>
+												<li class="item-inline">
+													<div class="project-pitem">
+														<div class="img-project">
+															<img src="images/picture/small-project.png" alt="">
+															<a href=""></a>
+														</div>
+														<div class="infor-project">
+															<h4><a href="">Tiêu đề</a></h4>
+															<div class="des-project">
+																Lorem Ipsum has been the industry's standard ...
+															</div>
+														</div>
+													</div>
+												</li>
+												<li class="item-inline">
+													<div class="project-pitem">
+														<div class="img-project">
+															<img src="images/picture/small-project.png" alt="">
+															<a href=""></a>
+														</div>
+														<div class="infor-project">
+															<h4><a href="">Tiêu đề</a></h4>
+															<div class="des-project">
+																Lorem Ipsum has been the industry's standard ...
+															</div>
+														</div>
+													</div>
+												</li>
+												<li class="item-inline">
+													<div class="project-pitem">
+														<div class="img-project">
+															<img src="images/picture/small-project.png" alt="">
+															<a href=""></a>
+														</div>
+														<div class="infor-project">
+															<h4><a href="">Tiêu đề</a></h4>
+															<div class="des-project">
+																Lorem Ipsum has been the industry's standard ...
+															</div>
+														</div>
+													</div>
+												</li>
+												<li class="item-inline">
+													<div class="project-pitem">
+														<div class="img-project">
+															<img src="images/picture/small-project.png" alt="">
+															<a href=""></a>
+														</div>
+														<div class="infor-project">
+															<h4><a href="">Tiêu đề</a></h4>
+															<div class="des-project">
+																Lorem Ipsum has been the industry's standard ...
+															</div>
+														</div>
+													</div>
+												</li>
+												<li class="item-inline">
+													<div class="project-pitem">
+														<div class="img-project">
+															<img src="images/picture/small-project.png" alt="">
+															<a href=""></a>
+														</div>
+														<div class="infor-project">
+															<h4><a href="">Tiêu đề</a></h4>
+															<div class="des-project">
+																Lorem Ipsum has been the industry's standard ...
+															</div>
+														</div>
+													</div>
+												</li>
+												<li class="item-inline">
+													<div class="project-pitem">
+														<div class="img-project">
+															<img src="images/picture/small-project.png" alt="">
+															<a href=""></a>
+														</div>
+														<div class="infor-project">
+															<h4><a href="">Tiêu đề</a></h4>
+															<div class="des-project">
+																Lorem Ipsum has been the industry's standard ...
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="displayProject2" role="tabpanel">
+										<div class="col-project">
+											<ul>
+												<li>
+													<div class="project-pitem list-inline">
+														<div class="img-project item-inline">
+															<img src="images/picture/big-project1.png" alt="">
+															<a href=""></a>
+														</div>
+														<div class="infor-project item-inline">
+															<h4><a href="">Tiêu đề hình ảnh</a></h4>
+															<div class="des-project">
+																Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="project-pitem list-inline">
+														<div class="img-project item-inline">
+															<img src="images/picture/big-project2.png" alt="">
+															<a href=""></a>
+														</div>
+														<div class="infor-project item-inline">
+															<h4><a href="">Tiêu đề hình ảnh</a></h4>
+															<div class="des-project">
+																Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="project-pitem list-inline">
+														<div class="img-project item-inline">
+															<img src="images/picture/big-project3.png" alt="">
+															<a href=""></a>
+														</div>
+														<div class="infor-project item-inline">
+															<h4><a href="">Tiêu đề hình ảnh</a></h4>
+															<div class="des-project">
+																Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="project-pitem list-inline">
+														<div class="img-project item-inline">
+															<img src="images/picture/big-project4.png" alt="">
+															<a href=""></a>
+														</div>
+														<div class="infor-project item-inline">
+															<h4><a href="">Tiêu đề hình ảnh</a></h4>
+															<div class="des-project">
+																Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="displayProject3" role="tabpanel">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="" class="quick-connect item-fixed"><span class="dot"></span>Kết nối nhanh (112)</a>
+	</main>
+	<div class="sidebar-connect">
+		<h3 class="text-uppercase">Kết nối nhanh của bạn <a href="" class="connect-close">x</a></h3>
+		<form action="" id="searchChat">
+			<div class="list-chatting scrollbar-inner">
+				<ul>
+					<li>
+						<a href="" class="active">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 1</h4>
+						</a>
+					</li>
+					<li>
+						<a href="" class="active">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 2</h4>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 3</h4>
+						</a>
+					</li>
+					<li>
+						<a href="" class="active">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 4</h4>
+						</a>
+					</li>
+					<li>
+						<a href="" class="active">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 5</h4>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 6</h4>
+						</a>
+					</li>
+					<li>
+						<a href="" class="active">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 7</h4>
+						</a>
+					</li>
+					<li>
+						<a href="" class="active">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 8</h4>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 9</h4>
+						</a>
+					</li>
+					<li>
+						<a href="" class="active">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 10</h4>
+						</a>
+					</li>
+					<li>
+						<a href="" class="active">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 11</h4>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 12</h4>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 13</h4>
+						</a>
+					</li>
+					<li>
+						<a href="" class="active">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 14</h4>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 15</h4>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 16</h4>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 17</h4>
+						</a>
+					</li>
+					<li>
+						<a href="" class="active">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 18</h4>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 19</h4>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="avatar" style="background-image: url(images/avartar-chat.png)"></div>
+							<h4>Custormer Name 20</h4>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom-chat search-user">
+				<input type="text" name="tu_khoa_chat" id="searchkeyChat" placeholder="Tìm kiếm ..." autocomplete="off" />
+			</div>
+		</form>
+	</div> 
+	<footer id="footer" class="text-center">
+		<div class="container">
+			<div class="list-inline">
+				<nav class="item-inline menu-footer">
+					<ul>
+						<li><a href="">Về chúng tôi</a></li>
+						<li><a href="">Dịch vụ cung cấp</a></li>
+						<li><a href="">Chính sách & Điều khoản</a></li>
+						<li><a href="">Liên hệ</a></li>
+					</ul>
+				</nav>
+				<div class="item-inline social">| Kết nối <a href="" rel="nofollow" target="_blank"><img src="images/icon/icon-facebook.png" alt="" /> Fanpage Konseek</a></div>
+			</div>
+			<div class="copyright"><span>Copyright © 2018 Konseek</span> - Tìm để xây - Nền tảng kết nối toàn diện ngành xây dựng</div>
+		</div>
+	</footer>
+	<div class="modal fade modalcustom" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+			<div class="the-tab">
+				<div class="tab-nav list-inline text-center text-uppercase">
+					<a id="loginTab" href="#login" class="item-inline active">Đăng nhập</a>
+					<a id="registerTab" href="#register" class="item-inline">Đăng ký</a>
+				</div>
+				<div class="tab-content active" id="login">
+					<form action="" id="loginForm" class="form-default">
+						<div class="form-group">
+							<p class="form-label">Tên tài khoản / Email</p>
+							<input type="text" name="login_user" id="loginUser" class="form-control" placeholder="Nhập tên tài khoản hoặc email" autocomplete="off" />
+						</div>
+						<div class="form-group">
+							<p class="form-label">Mật khẩu</p>
+							<input type="password" name="login_password" id="loginPassword" class="form-control formpass" autocomplete="off" />
+						</div>
+						<p class="forgot-pass text-right"><a href="" data-toggle="modal" data-target="#forgotPassword">Quên mật khẩu?</a></p>
+						<div class="form-submit">
+							<button class="btn btn-blue" type="submit">Đăng nhập</button>
+						</div>
+					</form>
+					<div class="social-login">
+						<div class="line"></div>
+						<a href="" class="login-facebook"><img src="images/login-facebook.png" alt="" /></a>
+						<a href="" class="login-google"><img src="images/login-google.png" alt="" /></a>
+					</div>
+				</div>
+				<div class="tab-content" id="register">
+					<form action="" id="loginRegister" class="form-default">
+						<div class="form-group">
+							<p class="form-label">Họ tên / Tên doanh nghiệp</p>
+							<input type="text" name="register_name" id="registerName" class="form-control" placeholder="Nhập họ tên hoặc tên doanh nghiệp" autocomplete="off" />
+						</div>
+						<div class="form-group">
+							<p class="form-label">Tên tài khoản</p>
+							<input type="text" name="register_username" id="registerUsername" class="form-control"  placeholder="Nhập tên tài khoản, viết liền, không dấu" autocomplete="off"  />
+						</div>
+						<div class="form-group">
+							<p class="form-label">Số điện thoại</p>
+							<input type="text" name="register_phone" id="registerPhone" class="form-control" autocomplete="off" />
+						</div>
+						<div class="form-group">
+							<p class="form-label">Email</p>
+							<input type="text" name="register_email" id="registerEmail" class="form-control" autocomplete="off" />
+						</div>
+						<div class="form-group">
+							<p class="form-label">Mật khẩu</p>
+							<input type="password" name="register_password" id="registerPasword" class="form-control formpass" autocomplete="off" />
+						</div>
+						<div class="form-group">
+							<p class="form-label">Nhắc lại mật khẩu</p>
+							<input type="password" name="register_repassword" id="registerrePasword" class="form-control formpass" autocomplete="off" />
+						</div>
+						<div class="form-group">
+							<img src="images/picture/captcha.jpg" alt="" />
+						</div>
+						<p class="policy">Bằng việc đăng ký, đăng nhập hoặc tiếp tục, Bạn đã đồng ý với <a href="" target="_blank">chính sách & điều khoản</a> của <a href="" target="_blank">Konseek</a>.</p>
+						<div class="form-submit">
+							<button class="btn btn-blue" type="submit">Tạo tài khoản</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	  </div>
+	  </div>
+	</div><!--end modal login register-->
+	<div class="modal fade modalcustom" id="forgotPassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+			<h3 class="modal-title text-center text-uppercase">Quên mật khẩu</h3>
+			
+			<form action="" id="forgotPasswordForm" class="form-default">
+				<div class="modalpadding30">
+				<p class="note-text">Vui lòng nhập địa chỉ Email đã đăng ký để lấy lại mật khẩu. Bạn vui lòng kiểm tra trong Hộp thư hoặc Spam.</p>
+				<div class="form-group">
+					<p class="form-label">Email</p>
+					<input type="text" name="forgot_email" id="forgotEmail" class="form-control" placeholder="Nhập email" autocomplete="off" />
+				</div>
+				</div>
+				<div class="form-submit form-submitfull text-center">
+					<button class="btn btn-medium btn-blue2 text-uppercase" type="submit">Gửi đi</button>
+				</div>
+			</form>
+		</div>
+	  </div>
+	</div><!--end forgot password modal-->
+	<div class="modal fade modalcustom" id="typeaccountModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+			<h3 class="modal-title text-center text-uppercase">Vui lòng chọn loại tài khoản</h3>
+			<form action="" id="accountTypeForm" class="form-default">
+				<div class="modalpadding30">
+					<div class="choosenaccount-list text-center">
+						<div class="row">
+							<div class="col-sm-6 account-host">
+								<label class="active">
+									<div class="image"></div>
+									<h4 class="text-uppercase">Chủ nhà</h4>
+									<p>Tôi là chủ sở hữu nhà hay đang<br /> tìm kiếm thay đổi cho <br />không gian sống.</p>
+									<input type="radio" name="account_type" value="host" checked />
+								</label>
+							</div>
+							<div class="col-sm-6 account-expert">
+								<label>
+									<div class="image"></div>
+									<h4 class="text-uppercase">Chuyên gia</h4>
+									<p>Tôi cung cấp các dịch vụ thiết kế, thi công, sửa chữa hay các sản phẩm nội thất, vật tư và thiết bị.</p>
+									<input type="radio" name="account_type" value="expert" />
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-submit form-submitfull text-center">
+					<button class="btn btn-medium btn-blue2 text-uppercase" type="submit">Hoàn thành</button>
+				</div>
+			</form>
+		</div>
+	  </div>
+	</div><!--end choosen account type-->
+	<div class="modal fade modalcustom modal-public" id="editpostModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+			<h3 class="modal-title text-center text-uppercase">Chỉnh sửa bài viết</h3>
+			<a href="" class="trash-post"><img src="images/icon/trash.png" alt=""></a>
+			<div class="the-tab">
+				<div class="tab-nav list-inline text-center text-uppercase">
+					<a href="#estepPublic1" class="item-inline step-public active">1</a>
+					<a href="#estepPublic2" id="eclickStep2" class="item-inline step-public">2</a>
+				</div>
+				<form action="" id="editPost" class="form-default">
+					<div class="tab-content active" id="estepPublic1">
+						<div class="modal-include">
+							<div class="form-group">
+								<p class="form-label">Tiêu đề bài viết <sup>*</sup></p>
+								<input type="text" name="title_post" id="titlePost" value="Fideco Tower Decor" class="form-control" placeholder="Nhập tiêu đề bài viết ..." autocomplete="off" />
+							</div>
+							<div class="form-group">
+						    	<p class="form-label">Địa điểm<sup>*</sup></p>
+						    	<div class="list-inline">
+						    		<div class="item-inline select-item">
+						    			<select class="form-control" id="selectProvince">
+						    				<option>HCM</option>
+									      	<option>Hà Nội</option>
+									      	<option>Đà Nẵng</option>
+									      	<option>Nghệ An</option>
+									      	<option>Huế</option>
+									    </select>
+						    		</div>
+						    		<div class="item-inline select-item">
+						    			<select class="form-control" id="selectDistrict">
+						    				<option>Quận 1</option>
+									      	<option>Hai Bà Trưng</option>
+									      	<option>Ba Đình</option>
+									      	<option>Đống Đa</option>
+									      	<option>Thạch Thất</option>
+									      	<option>Cầu Giấy</option>
+									    </select>
+						    		</div>
+						    	</div>
+						  	</div>
+						  	<div class="form-group form-cate">
+						    	<p class="form-label">Danh mục<sup>*</sup></p>
+						    	<div class="select-custom">
+									<a href="" class="current"><span>Chọn danh mục</span><i class="fa fa-caret-down"></i></a>
+									<div class="parent-custom mega-select">
+										<ul>
+											<li class="menu-item-design"><a href=""><img src="images/icon/icon-design.png" alt="" /> Tìm nhà thiết kế</a>
+												<div class="submenu text-left">
+													<ul>
+														<li>
+															<h2 class="text-uppercase">Thiết kế nhà</h2>
+															<ul>
+																<li><a href="">Thiết kế kiến trúc</a></li>
+																<li><a href="">Thiết kế và thi công trọn gói</a></li>
+																<li><a href="">Thiết kế cảnh quan</a></li>
+															</ul>
+														</li>
+														<li>
+															<h2 class="text-uppercase">Thiết Kế Nội Thất</h2>
+															<ul>
+																<li><a href="">Thiết kế và thi công nội thất nhà ở</a></li>
+																<li><a href="">Thiết kế và thi công nội thất shop, café, văn phòng</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="menu-item-contractors"><a href=""><img src="images/icon/icon-contractors.png" alt="" /> Tìm nhà thầu</a>
+												<div class="submenu text-left">
+													<ul>
+														<li>
+															<h2 class="text-uppercase">Thi Công</h2>
+															<ul>
+																<li><a href="">Thi công nhà trọn gói</a></li>
+																<li><a href="">Tổng thầu xây dựng</a></li>
+																<li><a href="">Thi công lắp đặt hoàn thiện</a></li>
+																<li><a href="">Thi công nội thất</a></li>
+																<li><a href="">Thi công mái, các hạng mục sắt</a></li>
+																<li><a href="">Thi công cảnh quan</a></li>
+																<li><a href="">Thi công bể bơi</a></li>
+															</ul>
+														</li>
+														<li>
+															<h2 class="text-uppercase">Sửa Chữa</h2>
+															<ul>
+																<li><a href="">Sửa chữa chung Nhà ở, Văn Phòng, Shop</a></li>
+																<li><a href="">Sửa chữa điều hòa, điện dân dụng</a></li>
+																<li><a href="">Sửa chữa thiết bị vệ sinh, hệ thống nước</a></li>
+																<li><a href="">Sửa chữa đồ nội thất</a></li>
+																<li><a href="">Sửa chữa hệ thống cửa</a></li>
+																<li><a href="">Bảo dưỡng bể bơi – spa, sân vườn</a></li>
+															</ul>
+														</li>
+														<li>
+															<h2 class="text-uppercase">Dịch vụ</h2>
+															<ul>
+																<li><a href="">Dịch vụ chuyển nhà</a></li>
+																<li><a href="">Diệt côn trùng trong nhà</a></li>
+																<li><a href="">Dịch vụ dọn dẹp nhà cửa</a></li>
+																<li><a href="">Dịch vụ tư vấn phong thủy – tâm linh</a></li>
+																<li><a href="">Dịch vụ hút bể phốt</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="menu-item-supplier"><a href=""><img src="images/icon/icon-supplier.png" alt="" /> Tìm nhà cung cấp</a>
+												<div class="submenu text-left">
+													<ul>
+														<li>
+															<h2 class="text-uppercase">Hoàn Thiện – Nội Thất</h2>
+															<ul>
+																<li><a href="">Vật tư hoàn thiện, trang trí tổng hợp</a></li>
+																<li><a href="">Nội thất phòng khách, phòng đọc</a></li>
+																<li><a href="">Nội thất phòng ngủ</a></li>
+																<li><a href="">Nội thất phòng bếp</a></li>
+																<li><a href="">Nội thất phòng ngủ</a></li>
+																<li><a href="">Nội thất phòng thờ</a></li>
+																<li><a href="">Thiết bị, nội thất phòng tắm, nhà vệ sinh</a></li>
+															</ul>
+														</li>
+														<li>
+															<h2 class="text-uppercase">Vật Liệu – Vật Tư</h2>
+															<ul>
+																<li><a href="">Vật liệu, vật tư thô</a></li>
+																<li><a href="">Vật liệu, vật tư thiết bị điện</a></li>
+																<li><a href="">Vật liệu, vật tư hệ thống nước</a></li>
+																<li><a href="">Vật liệu, vật tư sửa chữa nhà</a></li>
+																<li><a href="">Khác</a></li>
+															</ul>
+														</li>
+														<li>
+															<h2 class="text-uppercase">Thiết bị - Máy Móc</h2>
+															<ul>
+																<li><a href="">Thiết bị điện</a></li>
+																<li><a href="">Thiết bị cho hệ thống nước</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+						  	</div>
+						</div>
+					  	<div class="modal-footer text-center">
+					  		<a href="#eclickStep2" class="btn btn-public btn-save click-continue">Lưu</a>
+					  	</div>
+					</div>
+					<div class="tab-content" id="estepPublic2">
+						<div class="modal-include">
+							<div class="form-group">
+						    	<p class="form-label">Nội dung bài viết<sup>*</sup></p>
+						    	<textarea name="mpost_public" id="mpostPublic" class="form-control" cols="30" rows="10" placeholder="Nhập nội dung bài viết ..."></textarea>
+							</div>
+							<div class="form-group">
+								<p class="form-label">Ảnh</p>
+								<div class="gallery-thumbnail list-inline">
+									<div class="gallery-item item-inline">
+										<img src="images/picture/img1.png" alt="" class="imageview">
+									</div>
+									<div class="gallery-item item-inline">
+										<img src="images/picture/img2.png" alt="" class="imageview">
+									</div>
+									<div class="gallery-item item-inline">
+										<img src="images/picture/img3.png" alt="" class="imageview">
+									</div>
+									<div class="gallery-item gallery-insert-image item-inline">
+										<div class="insert-image">
+										    <label for="insertImage"><span><img src="images/icon/icon-circle-insert.png" alt=""> <br>
+										    Thêm hình</span></label>
+										    <input type="file" class="form-control-file" id="insertImage">
+									    </div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group form-share-with">
+								<p class="form-label">Chia sẻ với<sup>*</sup></p>
+								<div class="form-check">
+									<label class="form-check-label" for="exampleRadios1">Công khai (Mọi người trên hoặc ngoài Konseek)</label>
+									<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label active" for="exampleRadios2">Chỉ Chuyên gia (Các nhà thiết kế, nhà thầu và nhà cung cấp trong Konseek)</label>
+									<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-public" type="submit">Đăng bài viết</button>
+					  	</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	  </div>
+	</div><!--end modal edit post-->
+
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+	<script type="text/javascript" src="js/datepicker/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/bxslider/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/scrollbar/jquery.scrollbar.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/rating/rating.js"></script>
+	<script type="text/javascript" src="js/select2/js/select2.full.min.js"></script>
+	<script type="text/javascript" src="js/mcs.custom.js"></script>
+	<script type="text/javascript">
+	jQuery(function() {
+		$("body").click(function(e){
+			if(e.target.className !== "sidebar-menu") {
+				$(".customer-main .sidebar-menu li").removeClass('active');
+			}
+		});
+	});
+	</script>
+</body>
+</html>
